@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forge & Foil</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Forge & Foil</h1>
+    <p>Upload your Commander deck and customize your order below.</p>
+
+    <form action="https://formsubmit.co/kyle.hullander@gmail.com" method="POST" enctype="multipart/form-data">
+      <label>Upload XML File:</label>
+      <input type="file" name="deck" accept=".xml" required>
+
+      <label>Foil Type:</label>
+      <select name="foil">
+        <option>Non-Foil</option>
+        <option>Glossy Foil</option>
+        <option>Matte Foil</option>
+      </select>
+
+      <label>Finish:</label>
+      <select name="finish">
+        <option>Glossy</option>
+        <option>Matte</option>
+      </select>
+
+      <label>Sleeves:</label>
+      <select name="sleeves">
+        <option>Black</option>
+        <option>White</option>
+        <option>Red</option>
+        <option>Blue</option>
+        <option>Green</option>
+      </select>
+
+      <label>Deck Box:</label>
+      <select name="deckbox">
+        <option>Black</option>
+        <option>White</option>
+        <option>Red</option>
+        <option>Blue</option>
+        <option>Green</option>
+      </select>
+
+      <div class="price" id="price">Total Price: $45</div>
+
+      <button type="submit">Submit Order</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
